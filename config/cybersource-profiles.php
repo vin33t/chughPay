@@ -10,7 +10,7 @@ define('SECRET_KEY',  'abec09268fda4722b8c90ef968f9b6a47504b9ccb893470d8ab363aa1
 define('DF_ORG_ID', 'wfgchughfirm01_acct');
 
 // PAYMENT URL
-define('CYBS_BASE_URL', 'https://ics2wsa.ic3.com/commerce/1.x/transactionProcessor');
+define('CYBS_BASE_URL', 'https://secureacceptance.cybersource.com');
 
 define('PAYMENT_URL', CYBS_BASE_URL . '/pay');
 // define('PAYMENT_URL', '/sa-sop/debug.php');
