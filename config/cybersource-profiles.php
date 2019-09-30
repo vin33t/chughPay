@@ -2,7 +2,7 @@
 
 /* Cybersource Secure Acceptance W/M Profile Config*/
 define('MERCHANT_ID', 'wfgchughfirm01');
-define('PROFILE_ID',  'wfgchughfirm01_acct');
+define('PROFILE_ID',  'B14E96DB-7D54-420C-BB0E-D9EB850F2D69');
 define('ACCESS_KEY',  '48cce8428ee33f0cb656a743d5950248');
 define('SECRET_KEY',  'abec09268fda4722b8c90ef968f9b6a47504b9ccb893470d8ab363aa1c840de84cb4d34cca7b405a92bb8abf891ae5bfe4568aa00e5a40e7aecac8d63c5351c79a672d2ce4644a088d1a99924b13a753e81214a8d51e43ff96598cc5a5e30df9b15e5ec0f33c4b2882e90f72ca3c7a8c2a0bb661da3b4118b1121f30089868fe');
 
