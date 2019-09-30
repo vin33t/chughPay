@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ca8ed7-4b28-4c77-bd39-d29d00bdfa6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cybersource/secure/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cybersource/secure/form.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/cybersource/secure/form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="84" column="77" selection-start-line="84" selection-start-column="77" selection-end-line="84" selection-end-column="77" />
+            <state relative-caret-position="384">
+              <caret line="52" column="117" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="52" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -59,6 +58,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>defau</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -285,18 +289,18 @@
       <option name="presentableId" value="Default" />
       <updated>1569656789928</updated>
       <workItem from="1569656792639" duration="15107000" />
-      <workItem from="1569817529590" duration="4627000" />
+      <workItem from="1569817529590" duration="4868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19734000" />
+    <option name="totallyTimeSpent" value="19975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17697228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17697228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -311,7 +315,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32977587" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32977587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -398,8 +402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/cybersource/secure/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="84" column="77" selection-start-line="84" selection-start-column="77" selection-end-line="84" selection-end-column="77" />
+        <state relative-caret-position="384">
+          <caret line="52" column="117" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="52" selection-end-column="117" />
         </state>
       </provider>
     </entry>

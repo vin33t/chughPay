@@ -26,30 +26,30 @@ $cancel_page = route('cybersource.payment.cancel');
         <legend>Payment Details</legend>
         <div id="paymentDetailsSection" class="section">
 
-            <span>transaction_type:</span>            <input type="text" name="transaction_type" value="sale"><br/>
-            <span>create_token:</span>                <input type="checkbox" id="create_token" onclick="createToken(this)"><br/>
-            <span>reference_number:</span>            <input type="text" name="reference_number"><br/>
-            <span><b>auth_trans_ref_no</b>:</span>    <input type="text" name="auth_trans_ref_no"><br/>
-            <span>amount:</span>                      <input type="text" name="amount"><br/>
-            <span>currency:</span>                    <input type="text" name="currency"><br/>
-            <span>locale:</span>                      <input type="text" name="locale"> (en-us, th-th, ja-jp)<br/>
-            <span>merchant_descriptor:</span>         <input type="text" name="merchant_descriptor" value="ChughPay">
+                    <input type="hidden" name="transaction_type" value="sale">
+                          <input type="checkbox" id="create_token" onclick="createToken(this)" style="display: none;">
+                       <input type="hidden" name="reference_number">
+         <input type="hidden" name="auth_trans_ref_no">
+            <span>amount:</span>                      <input type="text" name="amount">
+                              <input type="hidden" name="currency" value="USD">
+                              <input type="hidden" name="locale" value="en-us"><br/>
+                   <input type="hidden" name="merchant_descriptor" value="ChughPay">
     </fieldset>
     <p>
     <fieldset>
-        <legend>Unsigned Data Fields</legend>
-        The name of each unsigned field should be included in the unsigned_field_names.
+        <legend>Tabs ID</legend>
             <h3>Billing Information</h3>
-            <span>bill_to_forename:</span>            <input type="text" name="bill_to_forename"><br/>
-            <span>bill_to_surname:</span>             <input type="text" name="bill_to_surname"><br/>
-            <span>bill_to_email:</span>               <input type="text" name="bill_to_email"><br/>
-            <span>bill_to_phone:</span>               <input type="text" name="bill_to_phone"><br/>
-            <span>bill_to_address_line1:</span>       <input type="text" name="bill_to_address_line1" maxlength="60"><br/>
-            <span>bill_to_address_line2:</span>       <input type="text" name="bill_to_address_line2" maxlength="60"><br/>
-            <span>bill_to_address_city:</span>        <input type="text" name="bill_to_address_city"><br/>
-            <span>bill_to_address_state:</span>       <input type="text" name="bill_to_address_state"><br/>
-            <span>bill_to_address_country:</span>     <input type="text" name="bill_to_address_country"><br/>
-            <span>bill_to_address_postal_code:</span> <input type="text" name="bill_to_address_postal_code"><br/>
+            <span>Tabs ID:</span>            <input type="text" name="tabs_id"><br/>
+{{--            <span>bill_to_forename:</span>            <input type="text" name="bill_to_forename"><br/>--}}
+{{--            <span>bill_to_surname:</span>             <input type="text" name="bill_to_surname"><br/>--}}
+{{--            <span>bill_to_email:</span>               <input type="text" name="bill_to_email"><br/>--}}
+{{--            <span>bill_to_phone:</span>               <input type="text" name="bill_to_phone"><br/>--}}
+{{--            <span>bill_to_address_line1:</span>       <input type="text" name="bill_to_address_line1" maxlength="60"><br/>--}}
+{{--            <span>bill_to_address_line2:</span>       <input type="text" name="bill_to_address_line2" maxlength="60"><br/>--}}
+{{--            <span>bill_to_address_city:</span>        <input type="text" name="bill_to_address_city"><br/>--}}
+{{--            <span>bill_to_address_state:</span>       <input type="text" name="bill_to_address_state"><br/>--}}
+{{--            <span>bill_to_address_country:</span>     <input type="text" name="bill_to_address_country"><br/>--}}
+{{--            <span>bill_to_address_postal_code:</span> <input type="text" name="bill_to_address_postal_code"><br/>--}}
 
         </div>
     </fieldset>
