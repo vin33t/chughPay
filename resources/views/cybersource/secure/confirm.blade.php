@@ -33,9 +33,12 @@ if ($_POST['transaction_type'] === 'create_payment_token') {
     <div>
         <?php
             foreach($params as $name => $value) {
-                echo "<div>";
-                echo "<span class=\"fieldName\">" . $name . "</span><span class=\"fieldValue\">" . $value . "</span>";
-                echo "</div>\n";
+                if($name == 'tabs_id' or $name == 'amount'){
+                    echo "<div>";
+                    echo "<span class=\"fieldName\">" . $name . "</span><span class=\"fieldValue\">" . $value . "</span>";
+                    echo "</div>\n";
+                }
+
             }
         ?>
     </div>
@@ -53,7 +56,10 @@ if ($_POST['transaction_type'] === 'create_payment_token') {
 </form>
 
 <!-- DF START -->
+<div STYLE="display: NONE">
+
 device_fingerprint_param: <?php echo $df_param; ?>
+</div>
 <p style="background:url(https://h.online-metrix.net/fp/clear.png?<?php echo $df_param; ?>&amp;m=1)"></p>
 <img src="https://h.online-metrix.net/fp/clear.png?<?php echo $df_param; ?>&amp;m=2" width="1" height="1" />
 <!-- DF END -->
