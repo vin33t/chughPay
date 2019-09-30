@@ -33,7 +33,7 @@ $cancel_page = route('cybersource.payment.cancel');
             <span>amount:</span>                      <input type="text" name="amount"><br/>
             <span>currency:</span>                    <input type="text" name="currency"><br/>
             <span>locale:</span>                      <input type="text" name="locale"> (en-us, th-th, ja-jp)<br/>
-            <span>merchant_descriptor:</span>         <input type="text" name="merchant_descriptor" value="Krungsri">
+            <span>merchant_descriptor:</span>         <input type="text" name="merchant_descriptor" value="ChughPay">
     </fieldset>
     <p>
     <fieldset>
@@ -82,7 +82,7 @@ $cancel_page = route('cybersource.payment.cancel');
     <input type="submit" id="btn_submit" value="Submit"/>
 
 <script type="text/javascript" src="{{url('cybersource/assets/js/jquery-1.7.min.js')}}"></script>
-<script type="text/javascript" src="{{url('cybersource/assets/js/payment_form.js')}}"></script>
+{{--<script type="text/javascript" src="{{url('cybersource/assets/js/payment_form.js')}}"></script>--}}
     <script type="text/javascript">
         
         function createToken(create_token) {
