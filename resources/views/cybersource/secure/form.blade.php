@@ -59,6 +59,7 @@ $cancel_page = route('cybersource.payment.cancel');
         .footer > .container {
             padding-right: 15px;
             padding-left: 15px;
+            background-color: #A3211F;
         }
 
         code {
@@ -107,10 +108,9 @@ $cancel_page = route('cybersource.payment.cancel');
 {{--        <input type="submit" id="btn_submit" value="Submit">--}}
 {{--    </div>--}}
 <!-- Begin page content -->
-    <div class="container mt-4  text-center" style="padding-top: 12%">
+    <div class="wrapper container mt-4  text-center" style="padding-top: 12%">
         <h2>Payment Details</h2>
         <hr>
-        <br>
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
@@ -229,7 +229,7 @@ $cancel_page = route('cybersource.payment.cancel');
 
 
 <footer class="footer">
-    <div style="background-color: #A3211F;">
+    <div class="container-fluid" style="background-color: #A3211F;">
         <div class="row text-center">
             <div class="col-md-12 mt-4" style="color: white;">
                 <h3>CONTACT US</h3>
@@ -239,8 +239,9 @@ $cancel_page = route('cybersource.payment.cancel');
             </div>
         </div>
     </div>
-    <div class="row" style="background-color: #434343; padding-top: 10px">
-        <div class="col-md-6 col-sm-12 text-center" style="padding-top: 4px; color: white;" >
+    <div class="container-fluid"  style="background-color: #434343;">
+    <div class="row" style="padding-top: 10px">
+        <div class="col-md-6 text-center" style="padding-top: 4px; color: white;" >
             © 2019 Chugh Affiliate Network. All Rights Reserved
         </div>
         <div class="col-md-6 col-sm-12 text-center" style="padding-top: 4px">
@@ -249,6 +250,7 @@ $cancel_page = route('cybersource.payment.cancel');
             <a href=""> TERMS AND CONDITIONS </a> &nbsp; &nbsp;
             <a href="https://www.chugh.com/sitemap/"> SITEMAP</a>&nbsp; &nbsp;
         </div>
+    </div>
     </div>
 
 

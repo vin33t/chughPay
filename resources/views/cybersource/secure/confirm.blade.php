@@ -65,8 +65,8 @@ if ($_POST['transaction_type'] === 'create_payment_token') {
         }
 
         .footer > .container {
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 10px;
+            padding-left: 10px;
         }
 
         code {
