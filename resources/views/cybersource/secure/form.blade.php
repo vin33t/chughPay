@@ -5,13 +5,16 @@ $cancel_page = route('cybersource.payment.cancel');
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Secure Acceptance - Payment Form</title>
+    <title>ChughPay</title>
     <link rel="stylesheet" type="text/css" href="{{url('cybersource/assets/css/payment.css')}}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <img src="{{url('cybersource/assets/img/logo-cybersource.png')}}" style="padding-bottom: 10px;" />
 
-<h2>Payment Form</h2>
+{{--<h2>Payment Form</h2>--}}
 
 <form id="payment_form" action="{{route('secure.payment.confirm')}}" method="post">
     <input type="hidden" name="profile_id" value="<?php echo PROFILE_ID; ?>">
@@ -23,7 +26,28 @@ $cancel_page = route('cybersource.payment.cancel');
     
     <input type="hidden" name="unsigned_field_names" value="device_fingerprint_id,signature,bill_to_forename,bill_to_surname,bill_to_email,bill_to_phone,bill_to_address_line1,bill_to_address_line2,bill_to_address_city,bill_to_address_state,bill_to_address_country,bill_to_address_postal_code,customer_ip_address,line_item_count,item_0_code,item_0_sku,item_0_name,item_0_quantity,item_0_unit_price,item_1_code,item_1_sku,item_1_name,item_1_quantity,item_1_unit_price,merchant_defined_data1,merchant_defined_data2,merchant_defined_data3,merchant_defined_data4">
     <fieldset>
-        <legend>Payment Details</legend>
+        <div class="container">
+            <div class="card" >
+                <div class="card-head text-center">
+                    <h4>Payment Details</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                    <label for="tabs_id">Tabs ID</label>
+                    <input type="text" name="tabs_id" class="form-control">
+                    <label for="amount">Amount</label>
+                    <input type="text" name="amount" class="form-control">
+                    <input type="submit" id="btn_submit" value="Submit">
+                        </div>
+                        <div class="col-md-4"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+{{--        <legend>Payment Details</legend>--}}
         <div id="paymentDetailsSection" class="section">
                     <div style="display:none;">
                     <input type="text" name="transaction_type" value="sale">
@@ -31,16 +55,16 @@ $cancel_page = route('cybersource.payment.cancel');
                        <input type="hidden" name="reference_number" value="wfgchughfirm01">
                        </div>
          <input type="hidden" name="auth_trans_ref_no" value="wfgchughfirm01">
-            <span>amount:</span>                      <input type="text" name="amount">
+{{--            <span>amount:</span>                      <input type="text" name="amount">--}}
                               <input type="hidden" name="currency" value="USD">
                               <input type="hidden" name="locale" value="en-us"><br/>
                    <input type="hidden" name="merchant_descriptor" value="ChughPay">
     </fieldset>
     <p>
     <fieldset>
-        <legend>Tabs ID</legend>
-            <h3>Billing Information</h3>
-            <span>Tabs ID:</span>            <input type="text" name="tabs_id" placeholder="Tabs ID"><br/>
+{{--        <legend>Tabs ID</legend>--}}
+{{--            <h3>Billing Information</h3>--}}
+{{--            <span>Tabs ID:</span>            <input type="text" name="tabs_id" placeholder="Tabs ID"><br/>--}}
         <div style="display:none;">
             <span>bill_to_forename:</span>            <input type="text" name="bill_to_forename" value=" "><br/>
             <span>bill_to_surname:</span>             <input type="text" name="bill_to_surname" value=" "><br/>
@@ -89,7 +113,6 @@ $cancel_page = route('cybersource.payment.cancel');
     <input type="hidden" name="merchant_defined_data3" value="MDD#3">
     <input type="hidden" name="merchant_defined_data4" value="MDD#4">
     <!-- MDD END -->
-    <input type="submit" id="btn_submit" value="Submit"/>
 
 <script type="text/javascript" src="{{url('cybersource/assets/js/jquery-1.7.min.js')}}"></script>
 <!--<script type="text/javascript" src="{{url('cybersource/assets/js/payment_form.js')}}"></script>-->
