@@ -3,7 +3,7 @@ return array(
     /**
      * The timezone to be used by cybersource
      */
-    'env' => 'test',
+    'env' => 'prod',
     /**
      * The timezone to be used by cybersource
      */

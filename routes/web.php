@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect('/cybersource/payment/form');
-})->name('home');
+//Route::get('/', function () {
+//    return redirect()->route('secure.payment.form');
+//})->name('home');
