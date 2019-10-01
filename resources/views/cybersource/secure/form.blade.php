@@ -40,17 +40,18 @@ $cancel_page = route('cybersource.payment.cancel');
         <legend>Tabs ID</legend>
             <h3>Billing Information</h3>
             <span>Tabs ID:</span>            <input type="text" name="tabs_id"><br/>
-{{--            <span>bill_to_forename:</span>            <input type="text" name="bill_to_forename"><br/>--}}
-{{--            <span>bill_to_surname:</span>             <input type="text" name="bill_to_surname"><br/>--}}
-{{--            <span>bill_to_email:</span>               <input type="text" name="bill_to_email"><br/>--}}
-{{--            <span>bill_to_phone:</span>               <input type="text" name="bill_to_phone"><br/>--}}
-{{--            <span>bill_to_address_line1:</span>       <input type="text" name="bill_to_address_line1" maxlength="60"><br/>--}}
-{{--            <span>bill_to_address_line2:</span>       <input type="text" name="bill_to_address_line2" maxlength="60"><br/>--}}
-{{--            <span>bill_to_address_city:</span>        <input type="text" name="bill_to_address_city"><br/>--}}
-{{--            <span>bill_to_address_state:</span>       <input type="text" name="bill_to_address_state"><br/>--}}
-{{--            <span>bill_to_address_country:</span>     <input type="text" name="bill_to_address_country"><br/>--}}
-{{--            <span>bill_to_address_postal_code:</span> <input type="text" name="bill_to_address_postal_code"><br/>--}}
-
+        <div style="display: none;>
+            <span>bill_to_forename:</span>            <input type="text" name="bill_to_forename"><br/>
+            <span>bill_to_surname:</span>             <input type="text" name="bill_to_surname"><br/>
+            <span>bill_to_email:</span>               <input type="text" name="bill_to_email"><br/>
+            <span>bill_to_phone:</span>               <input type="text" name="bill_to_phone"><br/>
+            <span>bill_to_address_line1:</span>       <input type="text" name="bill_to_address_line1" maxlength="60"><br/>
+            <span>bill_to_address_line2:</span>       <input type="text" name="bill_to_address_line2" maxlength="60"><br/>
+            <span>bill_to_address_city:</span>        <input type="text" name="bill_to_address_city"><br/>
+            <span>bill_to_address_state:</span>       <input type="text" name="bill_to_address_state"><br/>
+            <span>bill_to_address_country:</span>     <input type="text" name="bill_to_address_country"><br/>
+            <span>bill_to_address_postal_code:</span> <input type="text" name="bill_to_address_postal_code"><br/>
+        </div>
         </div>
     </fieldset>
 
@@ -82,7 +83,7 @@ $cancel_page = route('cybersource.payment.cancel');
     <input type="submit" id="btn_submit" value="Submit"/>
 
 <script type="text/javascript" src="{{url('cybersource/assets/js/jquery-1.7.min.js')}}"></script>
-{{--<script type="text/javascript" src="{{url('cybersource/assets/js/payment_form.js')}}"></script>--}}
+<script type="text/javascript" src="{{url('cybersource/assets/js/payment_form.js')}}"></script>
     <script type="text/javascript">
         
         function createToken(create_token) {
