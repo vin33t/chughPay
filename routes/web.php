@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return 'asd';
-});
+    return redirect('/cybersource/payment/form');
+})->name('home');

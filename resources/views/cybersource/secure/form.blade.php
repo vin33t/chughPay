@@ -55,27 +55,11 @@ $cancel_page = route('cybersource.payment.cancel');
     </div>
     </div>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
-        <a href="#" class="navbar-brand"><img src="https://3n798845yy6aq6maz3v5eg91-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/chugh-logo-160x59.jpg" alt=""> PAYMENT</a>
+        <a href="{{route('home')}}" class="navbar-brand"><img src="https://3n798845yy6aq6maz3v5eg91-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/chugh-logo-160x59.jpg" alt=""> PAYMENT</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-{{--        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">--}}
-{{--            <div class="navbar-nav">--}}
-{{--                <a href="https://chugh.com" class="nav-item nav-link active">Home</a>--}}
-{{--                <div class="nav-item dropdown">--}}
-{{--                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About  Us</a>--}}
-{{--                    <div class="dropdown-menu">--}}
-{{--                        <a href="https://www.chugh.com/diversity/" class="dropdown-item">DIVERSITY & INCLUSION AT CHUGH, LLP</a>--}}
-{{--                        <a href="https://www.chugh.com/awards/" class="dropdown-item">AWARDS & RECOGNITIONS</a>--}}
-{{--                        <a href="https://www.chugh.com/press-coverage/" class="dropdown-item">PRESS COVERAGE</a>--}}
-{{--                        <a href="https://www.chugh.com/community/" class="dropdown-item">COMMUNITY</a>--}}
-{{--                        <a href="https://www.chugh.com/events/" class="dropdown-item">EVENTS</a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-
-{{--            </div>--}}
-{{--        </div>--}}
     </nav>
 </div>
 {{--<h2>Payment Form</h2>--}}
