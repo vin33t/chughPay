@@ -6,14 +6,63 @@ $cancel_page = route('cybersource.payment.cancel');
 <html>
 <head>
     <title>ChughPay</title>
-    <link rel="stylesheet" type="text/css" href="{{url('cybersource/assets/css/payment.css')}}"/>
+{{--    <link rel="stylesheet" type="text/css" href="{{url('cybersource/assets/css/payment.css')}}"/>--}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        .bg-dark{
+           background-color: #434343 !important;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            height: 98px !important;
+            padding: 35px;
+            opacity: 1;
+        }
+        .navbar-brand{
+            margin-left: 42% !important;
+        }
+        .above-navbar{
+            padding: 5px;
+            background-color: #292929 !important;
+            color: #8d8d8d;
+        }
+    </style>
 </head>
 <body>
+<div class="all">
+    <div class="row above-navbar">
+        <div class="col-md-11">
 
+        </div>
+    <div class="col-md-1">
+        <a href="https://www.chugh.com/payment/#elementor-action%3Aaction%3Dpopup%3Aopen%20settings%3DeyJpZCI6IjI3NjAiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D" style="color: #8d8d8d;">Free Consultation</a>
+    </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+        <a href="#" class="navbar-brand"><img src="https://3n798845yy6aq6maz3v5eg91-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/chugh-logo-160x59.jpg" alt=""> PAYMENT</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+{{--        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">--}}
+{{--            <div class="navbar-nav">--}}
+{{--                <a href="https://chugh.com" class="nav-item nav-link active">Home</a>--}}
+{{--                <div class="nav-item dropdown">--}}
+{{--                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About  Us</a>--}}
+{{--                    <div class="dropdown-menu">--}}
+{{--                        <a href="https://www.chugh.com/diversity/" class="dropdown-item">DIVERSITY & INCLUSION AT CHUGH, LLP</a>--}}
+{{--                        <a href="https://www.chugh.com/awards/" class="dropdown-item">AWARDS & RECOGNITIONS</a>--}}
+{{--                        <a href="https://www.chugh.com/press-coverage/" class="dropdown-item">PRESS COVERAGE</a>--}}
+{{--                        <a href="https://www.chugh.com/community/" class="dropdown-item">COMMUNITY</a>--}}
+{{--                        <a href="https://www.chugh.com/events/" class="dropdown-item">EVENTS</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+
+{{--            </div>--}}
+{{--        </div>--}}
+    </nav>
+</div>
 {{--<h2>Payment Form</h2>--}}
 
 <form id="payment_form" action="{{route('secure.payment.confirm')}}" method="post">
@@ -25,28 +74,33 @@ $cancel_page = route('cybersource.payment.cancel');
     <input type="hidden" name="signed_field_names" value="profile_id,access_key,transaction_uuid,signed_field_names,unsigned_field_names,signed_date_time,locale,transaction_type,reference_number,auth_trans_ref_no,amount,currency,merchant_descriptor,override_custom_cancel_page,override_custom_receipt_page">
     
     <input type="hidden" name="unsigned_field_names" value="device_fingerprint_id,signature,bill_to_forename,bill_to_surname,bill_to_email,bill_to_phone,bill_to_address_line1,bill_to_address_line2,bill_to_address_city,bill_to_address_state,bill_to_address_country,bill_to_address_postal_code,customer_ip_address,line_item_count,item_0_code,item_0_sku,item_0_name,item_0_quantity,item_0_unit_price,item_1_code,item_1_sku,item_1_name,item_1_quantity,item_1_unit_price,merchant_defined_data1,merchant_defined_data2,merchant_defined_data3,merchant_defined_data4">
-    <fieldset>
-        <div class="container">
-            <div class="card" >
-                <div class="card-head text-center">
-                    <h4>Payment Details</h4>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4">
-                    <label for="tabs_id">Tabs ID</label>
-                    <input type="text" name="tabs_id" class="form-control">
-                    <label for="amount">Amount</label>
-                    <input type="text" name="amount" class="form-control">
-                    <input type="submit" id="btn_submit" value="Submit">
-                        </div>
-                        <div class="col-md-4"></div>
-
-                    </div>
-                </div>
+{{--    <div class="container-fluid text-center">--}}
+{{--        <label for="tabs_id">Tabs ID</label>--}}
+{{--        <input type="text" name="tabs_id" class="form-control">--}}
+{{--        <label for="amount">Amount</label>--}}
+{{--        <input type="text" name="amount" class="form-control">--}}
+{{--        <input type="submit" id="btn_submit" value="Submit">--}}
+{{--    </div>--}}
+    <div class="container mt-4 text-center">
+        <h2>Payment Details</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <label for="tabs_id">Tabs ID</label>
+                <input type="text" name="tabs_id" class="form-control" required>
+                <label for="amount">Amount</label>
+                <input type="text" name="amount" class="form-control" required>
+                <br>
+                <button type="submit" class="btn btn-lg" style="background-color: #830d10; color: white; border-radius: 6%">Submit</button>
             </div>
+            <div class="col-md-4"></div>
+
         </div>
+    </div>
+
+    <fieldset>
+
 {{--        <legend>Payment Details</legend>--}}
         <div id="paymentDetailsSection" class="section">
                     <div style="display:none;">
