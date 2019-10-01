@@ -25,11 +25,12 @@ $cancel_page = route('cybersource.payment.cancel');
     <fieldset>
         <legend>Payment Details</legend>
         <div id="paymentDetailsSection" class="section">
-
-                    <input type="hidden" name="transaction_type" value="sale">
-                          <input type="checkbox" id="create_token" onclick="createToken(this)" style="display: none;">
-                       <input type="hidden" name="reference_number">
-         <input type="hidden" name="auth_trans_ref_no">
+                    <div style="display:none;">
+                    <input type="text" name="transaction_type" value="sale">
+                          <input type="checkbox" id="create_token" onclick="createToken(this)">
+                       <input type="hidden" name="reference_number" value="wfgchughfirm01">
+                       </div>
+         <input type="hidden" name="auth_trans_ref_no" value="wfgchughfirm01">
             <span>amount:</span>                      <input type="text" name="amount">
                               <input type="hidden" name="currency" value="USD">
                               <input type="hidden" name="locale" value="en-us"><br/>
@@ -39,18 +40,26 @@ $cancel_page = route('cybersource.payment.cancel');
     <fieldset>
         <legend>Tabs ID</legend>
             <h3>Billing Information</h3>
-            <span>Tabs ID:</span>            <input type="text" name="tabs_id"><br/>
-        <div >
-            <span>bill_to_forename:</span>            <input type="text" name="bill_to_forename"><br/>
-            <span>bill_to_surname:</span>             <input type="text" name="bill_to_surname"><br/>
-            <span>bill_to_email:</span>               <input type="text" name="bill_to_email"><br/>
-            <span>bill_to_phone:</span>               <input type="text" name="bill_to_phone"><br/>
-            <span>bill_to_address_line1:</span>       <input type="text" name="bill_to_address_line1" maxlength="60"><br/>
-            <span>bill_to_address_line2:</span>       <input type="text" name="bill_to_address_line2" maxlength="60"><br/>
-            <span>bill_to_address_city:</span>        <input type="text" name="bill_to_address_city"><br/>
-            <span>bill_to_address_state:</span>       <input type="text" name="bill_to_address_state"><br/>
-            <span>bill_to_address_country:</span>     <input type="text" name="bill_to_address_country"><br/>
-            <span>bill_to_address_postal_code:</span> <input type="text" name="bill_to_address_postal_code"><br/>
+            <span>Tabs ID:</span>            <input type="text" name="tabs_id" placeholder="Tabs ID"><br/>
+        <div style="display:none;">
+            <span>bill_to_forename:</span>            <input type="text" name="bill_to_forename" value=" "><br/>
+            <span>bill_to_surname:</span>             <input type="text" name="bill_to_surname" value=" "><br/>
+            <span>bill_to_email:</span>               <input type="text" name="bill_to_email" value=" "><br/>
+            <span>bill_to_phone:</span>               <input type="text" name="bill_to_phone" value=" "><br/>
+            <span>bill_to_address_line1:</span>       <input type="text" name="bill_to_address_line1" maxlength="60" value=" "><br/>
+            <span>bill_to_address_line2:</span>       <input type="text" name="bill_to_address_line2" maxlength="60" value=" "><br/>
+            <span>bill_to_address_city:</span>        <input type="text" name="bill_to_address_city" value=" "><br/>
+            <span>bill_to_address_state:</span>       <input type="text" name="bill_to_address_state" value=" "><br/>
+            <span>bill_to_address_country:</span>     <input type="text" name="bill_to_address_country" value=" "><br/>
+            <span>bill_to_address_postal_code:</span> <input type="text" name="bill_to_address_postal_code" value=" "><br/>
+            
+            <!--<input type="text" name="payment_method" value="card"><br/>-->
+            <!--<input type="text" name="card_type" value="001"><br/>-->
+            <!--<input type="text" name="card_number" value="4111111111111111"><br/>-->
+            <!--<input type="text" name="card_expiry_date" value="12-2022"><br/>-->
+            <!--<input type="text" name="card_cvn" value="005"><br/>-->
+            </div>
+            
         </div>
         </div>
     </fieldset>
@@ -83,7 +92,7 @@ $cancel_page = route('cybersource.payment.cancel');
     <input type="submit" id="btn_submit" value="Submit"/>
 
 <script type="text/javascript" src="{{url('cybersource/assets/js/jquery-1.7.min.js')}}"></script>
-<script type="text/javascript" src="{{url('cybersource/assets/js/payment_form.js')}}"></script>
+<!--<script type="text/javascript" src="{{url('cybersource/assets/js/payment_form.js')}}"></script>-->
     <script type="text/javascript">
         
         function createToken(create_token) {
@@ -96,7 +105,20 @@ $cancel_page = route('cybersource.payment.cancel');
 
             $("input[name='transaction_type']").val(type);
         }
+        
+        window.onload = function(){
+            var type = 'sale';
+    $('#create_token').click();
+            if (create_token.checked) {
+                type += ',create_payment_token';
+            }
+
+            $("input[name='transaction_type']").val(type);
+        
+        }
     </script>
+    
+    
 
 </form>
 
