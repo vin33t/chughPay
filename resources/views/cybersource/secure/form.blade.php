@@ -27,6 +27,21 @@ $cancel_page = route('cybersource.payment.cancel');
             background-color: #292929 !important;
             color: #8d8d8d;
         }
+        a{
+            color: white;
+        }
+
+    </style>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -81,15 +96,16 @@ $cancel_page = route('cybersource.payment.cancel');
 {{--        <input type="text" name="amount" class="form-control">--}}
 {{--        <input type="submit" id="btn_submit" value="Submit">--}}
 {{--    </div>--}}
-    <div class="container mt-4 text-center">
+    <div class="container mt-4  text-center">
         <h2>Payment Details</h2>
+        <hr>
         <br>
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <label for="tabs_id">Tabs ID</label>
+                <label for="tabs_id"><h3>TABS ID</h3></label>
                 <input type="text" name="tabs_id" class="form-control" required>
-                <label for="amount">Amount</label>
+                <label for="amount"><h3>Amount</h3></label>
                 <input type="text" name="amount" class="form-control" required>
                 <br>
                 <button type="submit" class="btn btn-lg" style="background-color: #830d10; color: white; border-radius: 6%">Submit</button>
@@ -98,6 +114,7 @@ $cancel_page = route('cybersource.payment.cancel');
 
         </div>
     </div>
+
 
     <fieldset>
 
@@ -199,5 +216,37 @@ $cancel_page = route('cybersource.payment.cancel');
 
 </form>
 
+<div class="footer">
+    <div  style="background-color: #830d10; height: 250px;">
+    <div class="row" style="padding-top: 50px">
+        <div class="col-md-5">
+            <h2 style="margin-left: 60px">CONTACT US</h2>
+        </div>
+        <div class="col-md-7">
+
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <a href="https://chughdigitalde.wpengine.com/contact-us/" class="btn btn-lg" style="background-color: white; color: #830d10; border-radius: 0%; width: 600px;"> GET IN TOUCH</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.chugh.com/payment/#elementor-action%3Aaction%3Dpopup%3Aopen%20settings%3DeyJpZCI6IjI3NjAiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D" class="btn btn-lg" style="background-color: white; color: #830d10; border-radius: 0%; width: 600px;">Schedule Consultation</a>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    </div>
+    <div style="background-color: #434343; height: 50px;">
+        <div class="row">
+            <div class="col-md-6" style="padding-top: 10px">
+                © 2019 Chugh Affiliate Network. All Rights Reserved
+            </div>
+            <div class="col-md-6" style="padding-top: 10px">
+                <a href="https://www.chugh.com/disclaimer/"> DISCLAIMER </a>&nbsp; &nbsp;
+                <a href="#"> PRIVACY POLICY</a> &nbsp; &nbsp;
+                <a href=""> TERMS AND CONDITIONS </a> &nbsp; &nbsp;
+                <a href="https://www.chugh.com/sitemap/"> SITEMAP</a>&nbsp; &nbsp;
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
