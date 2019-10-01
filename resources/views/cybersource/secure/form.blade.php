@@ -40,7 +40,7 @@ $cancel_page = route('cybersource.payment.cancel');
         <legend>Tabs ID</legend>
             <h3>Billing Information</h3>
             <span>Tabs ID:</span>            <input type="text" name="tabs_id"><br/>
-        <div style="display: none;>
+        <div >
             <span>bill_to_forename:</span>            <input type="text" name="bill_to_forename"><br/>
             <span>bill_to_surname:</span>             <input type="text" name="bill_to_surname"><br/>
             <span>bill_to_email:</span>               <input type="text" name="bill_to_email"><br/>
