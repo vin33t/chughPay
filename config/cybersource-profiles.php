@@ -7,7 +7,7 @@ define('ACCESS_KEY',  '48cce8428ee33f0cb656a743d5950248');
 define('SECRET_KEY',  'abec09268fda4722b8c90ef968f9b6a47504b9ccb893470d8ab363aa1c840de84cb4d34cca7b405a92bb8abf891ae5bfe4568aa00e5a40e7aecac8d63c5351c79a672d2ce4644a088d1a99924b13a753e81214a8d51e43ff96598cc5a5e30df9b15e5ec0f33c4b2882e90f72ca3c7a8c2a0bb661da3b4118b1121f30089868fe');
 
 // DF TEST: 1snn5n9w, LIVE: k8vif92e 
-define('DF_ORG_ID', 'wfgchughfirm01_acct');
+define('DF_ORG_ID', 'k8vif92e');
 
 // PAYMENT URL
 define('CYBS_BASE_URL', 'https://secureacceptance.cybersource.com');
@@ -27,7 +27,7 @@ define('ACCESS_KEY_S',  '48cce8428ee33f0cb656a743d5950248');
 define('SECRET_KEY_S',  'abec09268fda4722b8c90ef968f9b6a47504b9ccb893470d8ab363aa1c840de84cb4d34cca7b405a92bb8abf891ae5bfe4568aa00e5a40e7aecac8d63c5351c79a672d2ce4644a088d1a99924b13a753e81214a8d51e43ff96598cc5a5e30df9b15e5ec0f33c4b2882e90f72ca3c7a8c2a0bb661da3b4118b1121f30089868fe');
 
 // DF TEST: 1snn5n9w, LIVE: k8vif92e 
-define('DF_ORG_ID_S', 'wfgchughfirm01_acct');
+define('DF_ORG_ID_S', 'k8vif92e');
 
 // PAYMENT URL
 define('CYBS_BASE_URL_S', 'https://secureacceptance.cybersource.com/silent');
